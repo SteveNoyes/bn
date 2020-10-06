@@ -1,0 +1,83 @@
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+@import '../../node_modules/jquery-drawer/scss/drawer.scss';
+@import '../../node_modules/owl.carousel/src/scss/owl.carousel.scss'; // .Eina01-SemiBold {
+// 	font-family: Eina01-SemiBold;
+// 	font-weight: normal;
+// 	font-style: normal;
+// }
+// .Eina01-Regular {
+// 	font-family: Eina01-Regular;
+// 	font-weight: normal;
+// 	font-style: normal;
+// }
+// .Eina01-Light {
+// 	font-family: Eina01-Light;
+// 	font-weight: normal;
+// 	font-style: normal;
+// }
+// .Eina01-Bold {
+// 	font-family: Eina01-Bold;
+// 	font-weight: normal;
+// 	font-style: normal;
+// }
+// .Eina01-RegularItalic {
+// 	font-family: Eina01-RegularItalic;
+// 	font-weight: normal;
+// 	font-style: normal;
+// }
+$blue: #236F8A;
+$blueDark: #4EADBF;
+$dark: #231F20;
+$grey: #3B464F;
+$greyLight: #d1d4d6;
+$copy: #2a2b2d;
+$bg: #F9F9F9;
+@import 'base/reset.scss';
+@import 'base/typebase.scss';
+@import 'base/responsive.scss';
+@import 'includes/select2.scss';
+@import 'modules/fonts.scss';
+@import 'modules/drawer.scss';
+@import 'modules/account.scss';
+@import 'modules/scaffolding.scss';
+@import 'modules/header.scss';
+@import 'modules/hero.scss';
+@import 'modules/article.scss';
+@import 'modules/designer.scss';
+@import 'modules/newsletter.scss';
+@import 'modules/footer.scss';
+@import 'modules/cart.scss';
+@import 'modules/identity.scss';
+@import 'modules/youtube.scss';
+@import 'modules/social.scss';
+@import 'modules/images.scss';
+@import 'modules/circle.scss';
+@import 'modules/product.scss';
+@import 'modules/accordion.scss';
+@import 'modules/woocommerce-account.scss';
+@import 'modules/woocommerce.scss';
+@import 'modules/category.scss';
+
+body {
+  font-family: 'Eina01-Regular', sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  font-family: 'Eina01-Regular', sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Eina01-Bold', sans-serif;
+}

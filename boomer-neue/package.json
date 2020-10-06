@@ -1,0 +1,22 @@
+{
+  "name": "wp-bootstrap-4",
+  "version": "1.0.0",
+  "description": "=== WP Bootstrap 4 === Contributors: TwoPoint Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready, two-columns, left-sidebar, right-sidebar, custom-colors, footer-widgets, full-width-template, rtl-language-support, sticky-post, theme-options, blog",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.4.0",
+    "iscroll": "^5.2.0",
+    "jquery": "^2.2.4",
+    "jquery-drawer": "^3.2.2",
+    "jquery-scrollto": "^1.4.6",
+    "jquery.scrollto": "^2.1.2",
+    "owl.carousel": "^2.3.4",
+    "select2": "^4.0.12",
+    "slicknav": "^1.0.8"
+  }
+}

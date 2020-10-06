@@ -1,0 +1,236 @@
+.entry-title a,
+a {
+  &:hover {
+    color: inherit;
+    opacity: 0.9;
+  }
+}
+
+.container-fluid {
+  .row {
+    & > div {
+      @include wrap;
+    }
+  }
+}
+
+.meta {
+  padding: 0 0 2rem;
+  max-width: 80%;
+  margin: 0 auto;
+  @include tablet {
+    max-width: 100%;
+    padding: 0 0 2rem;
+  }
+
+  &__long {
+    padding-bottom: 6rem;
+  }
+
+  &__view {
+    text-align: center;
+    margin-top: 4rem;
+    color: $blue;
+    font-weight: bold;
+  }
+
+  img {
+    transition: 0.5s ease-in-out;
+    transform: translateZ(0);
+  }
+
+  .price {
+    line-height: 2.5rem;
+    margin-top: 0;
+  }
+
+  h4 + h3 {
+    color: #49535B;
+    min-height: 5rem;
+  }
+}
+
+.info {
+  position: absolute;
+  bottom: 2rem;
+  width: calc(100% - 6rem);
+  @include tablet {
+    width: calc(100% - 2rem);
+  }
+}
+
+.state {
+  display: block;
+  transition: 0.5s all;
+  transform: translateZ(0);
+
+  &--hoverable {
+    &:hover {
+      cursor: pointer;
+      border-top: 4px solid transparent;
+      background: #FFFFFF;
+      box-shadow: 0 0 20px 0 rgba(0,0,0,0.25);
+      z-index: 10;
+
+      img {
+        transform: scale(1.1);
+      }
+
+      .cart__add {
+        display: block;
+        width: 8rem;
+        background: #236F8A;
+        color: #fff !important;
+
+        span {
+          opacity: 1;
+          text-align: center;
+          width: 100%;
+          color: #fff !important;
+        }
+      }
+    }
+  }
+
+  &--active {
+    transition: 0.5s all;
+    transform: translateZ(0);
+    background: #FFFFFF;
+    border-top: 4px solid #fff;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.1);
+
+    &:hover {
+      border-top: 4px solid $blue;
+    }
+  }
+
+  &--border {
+    border-top: 4px solid $blue;
+  }
+
+  &--borderHover {
+    &:hover {
+      border-top: 4px solid #fff;
+    }
+  }
+
+  &--activatable {
+    background: #FFFFFF;
+    box-shadow: 0 0 5px 0 rgba(0,0,0,0.10);
+    position: relative;
+    cursor: pointer;
+    border-top: 4px solid #fff;
+
+    &:hover {
+      background: #FFFFFF;
+      box-shadow: 0 0 20px 0 rgba(0,0,0,0.25);
+      z-index: 10;
+
+      img {
+        transform: scale(1.1);
+      }
+
+      .cart__add {
+        display: block;
+        width: 8rem;
+        background: #236F8A;
+
+        span {
+          opacity: 1;
+          text-align: center;
+          width: 100%;
+          color: #fff !important;
+        }
+      }
+    }
+  }
+
+  &.always_show_cta {
+    .cart__add {
+      display: block;
+      width: 8rem;
+      background: $blue;
+      margin-right: 0.5rem;
+
+      &:hover {
+        color: #fff !important;
+        opacity: 0.9;
+      }
+
+      span {
+        opacity: 1;
+        text-align: center;
+        line-height: 2.5rem;
+        width: 100%;
+        color: #fff !important;
+      }
+    }
+  }
+}
+
+h1 {
+  color: inherit;
+
+  &.big {
+    color: inherit;
+  }
+
+  &.bold {
+    font-weight: bolder;
+  }
+  @include tablet {
+    font-size: 3em;
+    line-height: 1em;
+  }
+}
+
+h2 {
+  color: inherit;
+
+  &.big {
+    color: $blueDark;
+    font-size: 2rem;
+    @include phone {
+      font-size: 1.25rem;
+    }
+  }
+}
+
+h3,
+h4,
+h5,
+h6 {
+  color: inherit;
+}
+
+p {
+  color: inherit;
+  line-height: 1.5em;
+  font-size: 1rem;
+
+  &.big {
+    line-height: 1.75em;
+    font-size: 1.25rem;
+    margin: 1.5rem auto 0;
+    max-width: 50rem;
+    margin-left: auto;
+    margin-right: auto;
+    @include phone {
+      font-size: 1rem;
+    }
+  }
+
+  img {
+    width: auto;
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+  }
+
+  .button {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+}

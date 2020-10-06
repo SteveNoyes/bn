@@ -1,0 +1,12 @@
+$phone: 48rem;
+$tablet: 72rem;
+@mixin phone {
+  @media (max-width: #{$phone}) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media (max-width: #{$tablet}) {
+    @content;
+  }
+}

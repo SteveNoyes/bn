@@ -1,0 +1,178 @@
+/**
+ * My Account
+ */
+.woocommerce-account {
+  .woocommerce {
+    display: flex;
+    margin-top: 4rem;
+  }
+
+  ul {
+    padding: 0;
+  }
+
+  .woocommerce-MyAccount-content {
+    display: inline-block;
+    float: left;
+    margin-left: 5%;
+    width: 75%;
+
+    h2 {
+      font-size: 25px;
+      text-align: center;
+      font-weight: 600;
+    }
+  }
+
+  .button {
+    background: white !important;
+    border-radius: 0.25rem !important;
+    border: 1px solid #eee;
+
+    &:hover {
+      color: #fff !important;
+    }
+  }
+
+  .woocommerce-MyAccount-navigation {
+    ul {
+      padding: 0;
+      border-top: 1px solid #eee;
+
+      li {
+        list-style: none;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 0;
+
+        a {
+          padding: 10px 5px;
+          display: block;
+
+          &:before {
+            margin-right: 20px;
+            opacity: 0.25;
+          }
+
+          &:hover {
+            &:before {
+              opacity: 1;
+            }
+          }
+        }
+      }
+
+      li.is-active {
+        a {
+          &:before {
+            opacity: 1;
+          }
+        }
+      }
+
+      li.woocommerce-MyAccount-navigation-link--dashboard {
+        a {
+          &:before {
+            font-family: 'FontAwesome';
+            content: "\f0e4";
+          }
+        }
+      }
+
+      li.woocommerce-MyAccount-navigation-link--orders {
+        a {
+          &:before {
+            font-family: 'FontAwesome';
+            content: "\f291";
+          }
+        }
+      }
+
+      li.woocommerce-MyAccount-navigation-link--downloads {
+        a {
+          &:before {
+            font-family: 'FontAwesome';
+            content: "\f1c6";
+          }
+        }
+      }
+
+      li.woocommerce-MyAccount-navigation-link--edit-address {
+        a {
+          &:before {
+            font-family: 'FontAwesome';
+            content: "\f015";
+          }
+        }
+      }
+
+      li.woocommerce-MyAccount-navigation-link--payment-methods {
+        a {
+          &:before {
+            font-family: 'FontAwesome';
+            content: "\f09d";
+          }
+        }
+      }
+
+      li.woocommerce-MyAccount-navigation-link--edit-account {
+        a {
+          &:before {
+            font-family: 'FontAwesome';
+            content: "\f007";
+          }
+        }
+      }
+
+      li.woocommerce-MyAccount-navigation-link--customer-logout {
+        a {
+          &:before {
+            font-family: 'FontAwesome';
+            content: "\f08b";
+          }
+        }
+      }
+    }
+  }
+
+  p.order-again {
+    text-align: right;
+  }
+
+  .woocommerce-EditAccountForm {
+    input[type="submit"] {
+      margin-top: 50px;
+      float: right;
+    }
+  }
+}
+
+.woocommerce-Addresses {
+  .col-1,
+  .col-2,
+  .woocommerce-myaccount-content {
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .woocommerce-account {
+    .woocommerce-MyAccount-navigation {
+      width: 20%;
+    }
+  }
+}
+
+.single-product {
+  background: #F9F9F9;
+}
+
+.subby {
+  p {
+    &:last-child {
+      margin: 0 auto;
+      max-width: 30rem;
+    }
+  }
+}

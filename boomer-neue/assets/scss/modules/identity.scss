@@ -1,0 +1,35 @@
+.identity {
+  padding-top: 1rem;
+  padding-bottom:1rem;
+  opacity: 0.8;
+
+  span {
+    &:before {
+      content: "";
+      display: inline-block;
+      height: 1rem;
+      width: 1rem;
+      background: {
+        position: center center;
+        size: contain;
+        repeat: no-repeat;
+      };
+      margin-right: 0.5rem;
+      vertical-align: middle;
+    }
+    font-size: 0.8rem;
+    margin-right: 1rem;
+  }
+
+  .person {
+    &:before {
+      background-image: url("images/identity.svg");
+    }
+  }
+
+  .calendar {
+    &:before {
+      background-image: url("images/calendar.svg");
+    }
+  }
+}

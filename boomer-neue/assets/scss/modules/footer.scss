@@ -1,0 +1,147 @@
+.footer {
+  margin-bottom: 0;
+  padding: 3em 0 1em;
+  background-color: #fafafa;
+
+  &__bottom {
+    background: $blue;
+    padding: 4em 0;
+    color: #fff;
+    @include tablet {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+
+    &__col {
+      width: calc(100% / 3);
+      flex: 1 0 calc(100% / 3);
+      @include tablet {
+        margin-bottom: 2rem;
+      }
+    }
+
+    .infusion-field-input {
+      line-height: 2rem;
+      padding: 0 1rem;
+      background-color: #fff;
+    }
+
+    form {
+      margin-top: 1em !important;
+      width: 90%;
+
+      label {
+        font-size: 0.8rem;
+      }
+    }
+
+    h4 {
+      color: #fff;
+      margin-top: 0;
+      font-size: 1.1rem;
+      font-weight: bold;
+    }
+
+    p {
+      margin-top: 1rem;
+      color: #fff;
+    }
+
+    .infusion-field-input {
+      display: block;
+      border: 0;
+      font-size: 1rem;
+      line-height: 3rem;
+      padding: 0 1rem;
+      background-color: #fff;
+      margin-bottom: 1rem;
+      margin-top: 0.25rem;
+    }
+
+    .infusion-recaptcha {
+      color: $blue !important;
+      display: block;
+      position: relative;
+      top: -1rem;
+      border: 0;
+      width: 7rem;
+      text-transform: uppercase;
+      font-weight: bold;
+      line-height: 2.5rem;
+      font-size: 1rem;
+      border-radius: 0.5rem;
+      background-color: #fff !important;
+    }
+
+    .col-full {
+      display: flex;
+      margin: 0 auto;
+      justify-content: space-between;
+      @include tablet {
+        display: block;
+      }
+    }
+  }
+
+  &__logo {
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+    max-width: 14em;
+  }
+
+  &__list {
+    margin-top: 4rem;
+    margin-bottom: 0;
+    @include tablet {
+      padding: 0 2rem;
+    }
+  }
+
+  ul {
+    display: flex;
+    margin: 1em 0;
+    padding-left: 0;
+    flex-grow: 1;
+    justify-content: space-between;
+    @include phone {
+      display: block;
+    }
+
+    li {
+      margin-bottom: 1em;
+      width: 100%;
+      list-style-type: none;
+
+      a {
+        font-size: 1.5rem;
+        font-size: 20px;
+        color: #000;
+        opacity: 0.8;
+        font-weight: bold;
+        text-decoration: none !important;
+
+        &:hover {
+          color: #333;
+        }
+      }
+
+      ul {
+        display: block;
+        margin-left: 0;
+        padding-left: 0;
+
+        li {
+          width: 100%;
+          margin-bottom: 0;
+
+          a {
+            font-size: 1rem;
+            color: #000;
+            font-weight: normal;
+          }
+        }
+      }
+    }
+  }
+}

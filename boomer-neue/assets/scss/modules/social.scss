@@ -1,0 +1,32 @@
+.social {
+  display: flex;
+  margin-top: 2rem;
+
+  &__item {
+    width: 3rem;
+    margin-right: 2em;
+    height: 3rem;
+    transition: 0.5s all;
+    background: {
+      image: url("images/facebook.svg");
+      repeat: no-repeat;
+      size: contain;
+    };
+
+    &.tw {
+      background: {
+        image: url("images/twitter.svg");
+      };
+    }
+
+    &.in {
+      background: {
+        image: url("images/instagram.svg");
+      };
+    }
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}

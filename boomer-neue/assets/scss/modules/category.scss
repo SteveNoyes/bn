@@ -1,0 +1,148 @@
+.archive {
+  .woocommerce-products-header {
+    h1 {
+      text-align: center;
+    }
+  }
+
+  .site-content {
+    @include tablet {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+
+  .mb-4 {
+    @include wrap;
+    margin-top: 3rem;
+  }
+
+  .products.columns-3 {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 0 5rem;
+    @include wrap;
+
+    li {
+      display: block;
+      width: calc(100% / 3);
+      transition: 0.5s all;
+      transform: translateZ(0);
+      background: #FFFFFF;
+      border-top: 4px solid #fff;
+      padding: 5rem 2rem 6rem;
+      box-shadow: 0 0 20px 0 rgba(0,0,0,0.1);
+      @include tablet {
+        width: calc(100% / 2);
+      }
+      @include phone {
+        width: calc(100%);
+      }
+
+      .woocommerce-LoopProduct-link {
+        img {
+          margin: 0 auto 2rem;
+          max-height: 10rem;
+          max-width: 10rem;
+          width: auto;
+          height: auto;
+          display: block;
+          transition: 0.5s ease-in-out all;
+        }
+      }
+
+      .wcsatt-sub-discount,
+      small {
+        display: none;
+      }
+
+      .price {
+        color: #bbb;
+        position: absolute;
+        bottom: 2rem;
+        left: 2rem;
+        line-height: 2.75rem;
+        font-size: 0.85rem;
+        transition: 0.25s all;
+        font-weight: bold;
+
+        .amount {
+          transition: 0.5s all;
+          font-size: 1.25rem;
+          font-weight: normal;
+          color: #000 !important;
+        }
+      }
+
+      .button {
+        overflow: hidden;
+        transition: 0.5s all;
+        font-size: 1rem;
+        color: #fff !important;
+        border-radius: 0.25rem;
+        padding: 0.5rem 1rem;
+        border: 2px solid $blue;
+        border-radius: 0.25rem;
+        position: absolute;
+        bottom: 2rem;
+        right: 2rem;
+        overflow: hidden;
+        max-height: 2.75rem;
+        max-width: 2.75rem;
+        top: auto;
+        position: absolute;
+        white-space: nowrap;
+
+        &::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          display: block;
+          height: 2.75rem;
+          width: 2.75rem;
+          max-height: 2.75rem;
+          max-width: 2.75rem;
+          background: {
+            color: #fff;
+            image: url("../assets/images/cart.svg");
+            size: 20px auto;
+            position: 10px 10px;
+            repeat: no-repeat;
+          };
+        }
+      }
+
+      h2 {
+        font-size: 1.5rem;
+        line-height: 1em;
+      }
+
+      &:hover {
+        img {
+          transform: scale(1.1);
+        }
+
+        .price {
+          color: #fff !important;
+
+          .amount:nth-child(1) {
+            color: #000 !important;
+          }
+
+          .amount:nth-child(2) {
+            color: #fff !important;
+          }
+        }
+
+        .button {
+          background: $blue !important;
+          border-radius: 0.25rem;
+          text-indent: 0;
+          max-width: 12rem;
+          padding-left: 3.5rem;
+        }
+      }
+    }
+  }
+}

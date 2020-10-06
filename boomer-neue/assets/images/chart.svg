@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="104px" height="85px" viewBox="0 0 104 85" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <title>chart</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home-Copy-18" transform="translate(-669.000000, -3434.000000)" fill="#236F8A">
+            <path d="M763.545455,3434 C768.767056,3434 773,3438.22842 773,3443.44444 L773,3509.55556 C773,3514.77158 768.767056,3519 763.545455,3519 L678.454545,3519 C673.232944,3519 669,3514.77158 669,3509.55556 L669,3443.44444 C669,3438.22842 673.232944,3434 678.454545,3434 L763.545455,3434 Z M764,3443 L679,3443 L679,3509 L764,3509 L764,3443 Z M707,3472 L707,3500 L698,3500 L698,3472 L707,3472 Z M726,3453 L726,3500 L717,3500 L717,3453 L726,3453 Z M744,3467 L744,3500 L735,3500 L735,3467 L744,3467 Z" id="chart"></path>
+        </g>
+    </g>
+</svg>

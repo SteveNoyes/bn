@@ -1,0 +1,44 @@
+.side-menu {
+  padding: 1rem;
+
+  li {
+    padding-left: 1rem;
+    position: relative;
+
+    ul {
+      transition: 1s all;
+      transform: translateZ(0);
+      height: 0;
+      overflow: hidden;
+    }
+
+    &:hover {
+      ul {
+        height: auto;
+      }
+    }
+
+    &.menu-item-has-children {
+      & > a {
+        pointer-events: none;
+      }
+
+      &:after {
+        position: absolute;
+        display: block;
+        content: "";
+        width: 0.5rem;
+        height: 1.5rem;
+        margin-top: 0;
+        background: {
+          size: contain;
+          position: center center;
+          image: url("images/chevron-down.svg");
+          repeat: no-repeat;
+        };
+        top: 0;
+        left: 0;
+      }
+    }
+  }
+}

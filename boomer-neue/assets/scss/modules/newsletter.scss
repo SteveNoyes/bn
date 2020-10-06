@@ -1,0 +1,146 @@
+.newsletter {
+  font-size: 16px;
+  background: $blueDark;
+  padding: 2em 0;
+  color: #fff;
+
+  input[type="email"] {
+    height: 40px;
+    display: inline-block;
+    border: 0;
+    border-radius: 20px;
+    width: calc(100% - 7.25rem);
+    float: left;
+    text-transform: uppercase;
+    padding-left: 1em;
+    background-color: #FFFFFF;
+    @include tablet {
+      float: left;
+      max-width: 20em;
+      display: block;
+      margin-right: 1em;
+    }
+  }
+
+  input[type="submit"] {
+    height: 40px;
+    display: inline-block;
+    border: 0;
+    border-radius: 20px;
+    font-weight: bold;
+    margin-left: 1rem;
+    text-transform: uppercase;
+    width: 100px;
+    background-color: #FFFFFF;
+    font-size: 0.8rem;
+    margin-top: 0;
+    margin-left: 1em;
+    padding: 0;
+    @include tablet {
+      margin-left: 0;
+      float: none;
+      margin-top: 0;
+      display: block;
+    }
+  }
+
+  form {
+    margin: 0;
+  }
+
+  ul {
+    display: flex;
+    padding: 0;
+    margin-top: 0.5em;
+
+    li {
+      display: block;
+      margin-right: 1em;
+      white-space: nowrap;
+    }
+  }
+
+  label {
+    color: #FFFFFF;
+    font-weight: bold;
+  }
+
+  &__close {
+    height: 2em;
+    cursor: pointer;
+    text-align: right;
+    text-transform: uppercase;
+    font-weight: bolder;
+    padding: 0;
+    margin-right: 2rem;
+    //
+    // &:after {
+    //   height: 1em;
+    //   width: 1em;
+    //   background: {
+    //     image: url("images/x-white.svg");
+    //     repeat: no-repeat;
+    //     size: contain;
+    //   };
+    //   vertical-align: middle;
+    //   margin-top: -3px;
+    //   display: inline-block;
+    //   content: "";
+    // }
+  }
+
+  &__wrap {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    @include tablet {
+      flex-direction: column;
+      width: calc(100% - 4rem);
+      margin: 0 2rem;
+      max-width: 100%;
+    }
+
+    &__item {
+      width: 40%;
+      margin-bottom: 2em;
+      @include tablet {
+        width: 100%;
+      }
+
+      p {
+        font-size: 0.9em;
+        margin-right: 2em;
+        max-width: 30em;
+        line-height: 24px;
+        font-size: 14px;
+        @include tablet {
+          margin-right: 0;
+          max-width: 100%;
+        }
+      }
+
+      h4 {
+        color: #fff;
+        line-height: 24px;
+        font-size: 14px;
+        margin-top: 0;
+        text-transform: uppercase;
+        color: #fff;
+      }
+
+      &.input {
+        width: 60%;
+        @include tablet {
+          margin-bottom: 0;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .form__wrap {
+    margin-top: 1rem;
+  }
+}

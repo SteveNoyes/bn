@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="92px" height="46px" viewBox="0 0 92 46" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <title>weights</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home-Copy-18" transform="translate(-239.000000, -3454.000000)" fill="#236F8A" fill-rule="nonzero">
+            <g id="weights" transform="translate(239.000000, 3454.000000)">
+                <polygon id="Path" points="30 14 63 14 63 31 30 31"></polygon>
+                <path d="M87.2627568,11 L85,11 L85,35 L87.2627568,35 C89.8778574,34.9967276 91.9975756,32.8515035 92,30.2031092 L92,15.7952546 C91.9967675,13.1476784 89.8770492,11.0024545 87.2627568,11 Z" id="Path"></path>
+                <path d="M76.1673537,0 L67,0 L67,46 L76.1673537,46 C78.8351196,45.9966859 80.997527,43.8242796 81,41.1431555 L81,4.85684449 C80.997527,2.17572036 78.8351196,0.00331412104 76.1673537,0 Z" id="Path"></path>
+                <path d="M11,4.85684449 L11,41.1431555 C11.002473,43.8242796 13.1648804,45.9975144 15.8326463,46 L25,46 L25,0 L15.8326463,0 C13.1648804,0.00331412104 11.002473,2.17572036 11,4.85684449 Z" id="Path"></path>
+                <path d="M0,15.7960727 L0,30.2031092 C0.00242439267,32.8515035 2.12214256,34.9967276 4.73724316,35 L7,35 L7,11 L4.73724316,11 C2.12214256,11.0024545 0.00323250977,13.1484967 0,15.7960727 Z" id="Path"></path>
+            </g>
+        </g>
+    </g>
+</svg>

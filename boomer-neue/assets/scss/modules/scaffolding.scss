@@ -1,0 +1,123 @@
+html {
+  margin: 0 !important;
+}
+
+body {
+  color: $copy;
+}
+
+.mimic {
+  height: 6rem;
+  width: 100%;
+}
+
+.wrap {
+  max-width: 67.5em;
+  margin: 0 auto;
+  @include tablet {
+    padding: 0;
+  }
+
+  &.noPad {
+    padding: 0;
+  }
+}
+@mixin wrap {
+  max-width: 67.5em;
+  margin: 0 auto;
+  @include tablet {
+    padding: 0;
+  }
+
+  &.noPad {
+    padding: 0;
+  }
+}
+
+.unwrap {
+  max-width: 100% !important;
+  width: 100% !important;
+  padding: 0 !important;
+  margin-bottom: 3rem;
+
+  & > .row {
+    @include wrap;
+  }
+}
+
+a {
+  color: $blue;
+  transition: 0.25s ease-in-out all;
+
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+.center {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+}
+
+.pad {
+  &__both {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    @include phone {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  }
+
+  &__right {
+    padding-right: 2rem;
+    @include phone {
+      padding-right: 1rem;
+    }
+  }
+
+  &__left {
+    padding-left: 2rem;
+    @include phone {
+      padding-left: 1rem;
+    }
+  }
+}
+
+.no {
+  margin: 0;
+}
+
+#wpadminbar {
+  top: auto !important;
+  bottom: 0 !important;
+  position: fixed !important;
+}
+
+.extrapad {
+  padding: 8rem 0 !important;
+  @include tablet {
+    padding: 4rem 0 !important;
+  }
+  @include phone {
+    padding: 2rem 0 !important;
+  }
+}
+
+.overlay {
+  position: relative;
+
+  &:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    display: block;
+    background: linear-gradient(to bottom,rgba(0,0,0,0) 0%,rgba(0,0,0,0) 40%,rgba(0,0,0,.5) 100%);
+  }
+}
